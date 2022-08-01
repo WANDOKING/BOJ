@@ -11,7 +11,7 @@ void push(int n) {
     stackNumCount++;
 }
 
-char pop(int n) {
+char pop() {
     if (stackNumCount == 0) {
         return -1;
     }
@@ -39,7 +39,7 @@ int main(void)
             if (input[j] == '(') {
                 push(input[j]);
             } else if (input[j] == ')') {
-                if (pop(input[j]) == -1) {
+                if (pop() == -1) {
                     bIsValid = false;
                     break;
                 }
