@@ -15,6 +15,8 @@ void DfsRecursive(int depth, int N, int M)
             }
             printf("\n");
         }
+        
+        return;
     }
     
     for (int i = nums[depth - 1] + 1; i <= N; i++)
