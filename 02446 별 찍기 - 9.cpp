@@ -2,6 +2,9 @@
 
 int main(void)
 {
+    std::cin.tie(nullptr);
+    std::ios_base::sync_with_stdio(false);
+
     int N;
 
     std::cin >> N;
@@ -18,11 +21,6 @@ int main(void)
             std::cout << '*';
         }
 
-        for (int j = 0; j < i; ++j)
-        {
-            std::cout << ' ';
-        }
-
         std::cout << '\n';
     }
 
@@ -36,11 +34,6 @@ int main(void)
         for (int j = 0; j < i * 2 + 1; ++j)
         {
             std::cout << '*';
-        }
-
-        for (int j = 0; j < N - i - 1; ++j)
-        {
-            std::cout << ' ';
         }
 
         std::cout << '\n';
